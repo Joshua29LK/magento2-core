@@ -163,7 +163,7 @@ class Api extends AbstractHelper
             $endpoint = $debugEndpoint;
         }
 
-        $headers = ['Content-Type: application/json'];
+	$headers = ['Content-Type' => 'application/json'];
         if (null !== $token) {
             $headers[] = "Authorization: bearer $token";
         }
